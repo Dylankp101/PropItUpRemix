@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import MyComponent from './components/MyComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <MyComponent firstName={"Jon"} lastName={"Jacobs"} age={44} hairColor={"Black"}/>
+        <MyComponent firstName={"Sam"} lastName={"Darnold"} age={24} hairColor={"Blonde"}/>
+        <MyComponent firstName={"Louie"} lastName={"Chales"} age={14} hairColor={"Brown"}/>
+        <MyComponent firstName={"David"} lastName={"Lang"} age={78} hairColor={"White"}/>
     </div>
   );
 }
+
+
 
 export default App;
